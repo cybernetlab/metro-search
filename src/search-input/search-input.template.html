@@ -1,0 +1,8 @@
+<md-autocomplete md-search-text="searchText"
+                 md-selected-item="selectedItem"
+                 md-items="item in $ctrl.query(searchText)"
+                 md-item-text="item.value">
+  <md-item-template>
+    <span>{{ item.displayName }}</span>
+  </md-item-template>
+</md-autocomplete>
